@@ -8,6 +8,6 @@ public struct Point
     public void Print()
     {
 // TODO: print coordinates
-        Console.WriteLine($"X: {X}\n Y: {Y}");
+        Console.WriteLine($"X: {X}\nY: {Y}");
     }
 }
