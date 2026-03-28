@@ -10,19 +10,21 @@ public class FileResource : Resource, IDisposable
     {
 // TODO: implement
         IsOpen = true;
-        Console.WriteLine("відкрито");
+        Console.WriteLine($"відкрито | {Name}");
+        
     }
 
     public override void Close()
     {
 // TODO: implement
         IsOpen = false;
-        Console.WriteLine("закрито");
+        Console.WriteLine($"закрито | {Name}");
     }
 
     public void Dispose()
     {
 // TODO: call Close() and print diagnostic message
         Close();
+        Console.WriteLine($"disposed | {Name}");
     }
 }
