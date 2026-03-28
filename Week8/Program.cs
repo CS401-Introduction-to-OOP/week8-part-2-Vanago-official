@@ -26,6 +26,7 @@ class Program
         r1.Print();
         r2.Print();
         
+        // struct зберігається в stack, коли class в heap, в p1 робиться повна копія, а в r1 лише копіюється посилання
         // Boxing demo
         BoxingTester.Test();
     }
