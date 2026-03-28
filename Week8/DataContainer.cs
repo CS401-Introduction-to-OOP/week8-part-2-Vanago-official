@@ -13,6 +13,12 @@ public class DataContainer<T> where T : DataItem
     public long GetTotalSize()
     {
         // TODO: sum size of all items
-        return _items.Count;
+        long totalSize = 0;
+        foreach (var item in _items)
+        {
+            totalSize += item.GetSize();
+        }
+
+        return totalSize;
     }
 }
